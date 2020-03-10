@@ -1,0 +1,22 @@
+ <view class='head'>
+   <image class='avatar' src='{{src}}'></image>
+    <text class>Hi!, 你终于来了～</text>
+  </view>
+  <text class="item">跑步半径（米）</text>
+  <view  class="item">
+  <text>{{meters}}</text>
+  <image src="/img/edit.png" class="edit" bindtap="change2"></image>
+  </view>
+  <modal hidden="{{hidden}}" title="打卡点个数" confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
+  <input type='text'placeholder="{{pois}}" auto-focus bindinput='PoiInput'/>
+</modal>
+ <modal hidden="{{hidden2}}" title="跑步半径" confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm2">
+  <input type='text'placeholder="{{meters}}" auto-focus bindinput='MetersInput'/>
+</modal>
+  <text class="item">打卡点个数</text>
+  <view class="item">
+  <text>{{pois}}</text>
+  <image src="/img/edit.png" class="edit" bindtap="change"></image>
+  </view>
+
+  

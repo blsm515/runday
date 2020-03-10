@@ -1,0 +1,19 @@
+<!--pages/add/add.wxml-->
+<form bindsubmit="bindFormSubmit">
+  <view class='bot'>
+    <view class="circle"></view>
+    <view class='botinput line'>
+      <label class='date-label'>日期：</label>
+      <picker mode="date" fields="day" value="{{date}}" start="1996-09-01" end="3050-09-01" bindchange="bindDateChange">
+       <input class="picker-text" type="text" value="{{date}}"></input>   
+      </picker>
+    </view>
+    <view class='botinput line'>
+      <label>事项：</label>
+      <textarea  name="note" value="{{note}}"></textarea>
+    </view>
+    <view>
+      <button form-type="submit" class='save-btn'>保存</button>
+    </view>
+  </view>
+</form>

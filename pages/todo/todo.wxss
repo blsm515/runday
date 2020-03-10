@@ -1,0 +1,70 @@
+/* pages/todo/todo.wxss */
+.head {
+    width:100%; 
+    padding: 60px 0;
+    background-color: #eb4d45;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    box-shadow: 0 3px 10px #ccc;
+    /* position: fixed; */
+
+}
+.con{
+  height: 100vh;
+  overflow: hidden;
+}
+.head-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.head-item text {
+    line-height: 30px;
+    text-align: center;
+}
+
+.head-item text:nth-child(1) {
+    font-size: 14px;
+}
+
+.head-item text:nth-child(2) {
+    font-size: 16px;
+}
+
+.arrow::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 6px solid #fff;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    position: relative;
+    top: 4px;
+    left: 4px;
+}
+
+.addBtn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: #eb4d45;
+    border-radius: 100%;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 60px;
+    box-shadow: 3px 3px 3px #ccc;
+    color: #fff;
+}
+
+.scroll-view {
+    height: calc(100vh - 100px);
+    padding-top: 10px;
+}

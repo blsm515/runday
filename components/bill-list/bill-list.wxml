@@ -1,0 +1,9 @@
+<view wx:for="{{data}}" wx:key="index">
+    <view class='main-head' bindtap="selectNote" data-index="{{index}}" data-item="{{item}}" >
+        <text class="date">{{item.date}}</text>
+        <text>{{item.note}}</text>
+         <image wx-if="{{item.finish==1}}" src="/img/finish.png" class="edit" bindtap="change"></image>
+         
+    </view>
+
+</view>

@@ -1,0 +1,48 @@
+.log-list {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0;
+  border: 1px solid rgb(248, 248, 248);  
+}
+.tr{
+  font-weight: 600;
+}
+.item {
+  display: inline;
+  flex: 1;
+  text-align: center;
+}
+
+.head {
+  background-color: #EB4D45;
+  display:  flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  margin-bottom: 5px;
+  height: 164px;
+  box-shadow: 0 3px 10px #ccc;
+  /* margin-bottom: 10px; */
+}
+
+.title{
+  font-size: 18px;
+  color: white;
+  margin-bottom: 10px;
+}
+.day{
+  font-size: 40px;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 10px;
+}
+.day:after{
+   content:"天";
+   font-size: 12px;
+   color: white;
+
+}
+.tap{
+   color: white;
+  
+}

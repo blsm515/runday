@@ -1,0 +1,9 @@
+<!--pages/start/start.wxml-->
+<view class="container">
+   <text class="city">{{city}}</text>
+   <text class="tem">{{temperature}}</text>
+   <text class="wea">{{weather}}</text>
+ <view class="usermotto" catchtap="gotoRun">
+<text>开始跑步</text>
+  </view>
+</view>

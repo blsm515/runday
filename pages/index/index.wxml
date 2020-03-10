@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="run_header">
+        当前跑了: {{meters}}
+        共计时间：{{time}}
+    </view>
+ <map id="map" show-location longitude="{{clongitude}}" latitude="{{clatitude}}" scale="16" markers="{{markers}}" style="width: 100%; height: 100vh;"></map>
+<view class="button">
+
+  <view class="run_bottom" catchtap="runstatus">
+        <view wx:if="{{run}}"> 暂停 </view>
+        <view wx:else> 开始 </view>
+    </view>
+<view class="run_bottom" bindtap="check"> 打卡 </view>
+<view class="run_bottom" bindtap="leave"> 离开 </view>
+</view>

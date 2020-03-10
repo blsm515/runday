@@ -1,0 +1,45 @@
+/* pages/add/add.wxss */
+
+.picker-text {
+  font-size: 16px;
+  padding: 0 20px;
+  color: #eb4d45;
+  display: inline-block;
+  height: 20px;
+  line-height: 10px;
+}
+
+.bot {
+  
+  background-color: #fff;
+}
+
+.botinput {
+  
+  padding: 6px 10px;
+}
+
+.save-btn {
+  background-color: #eb4d45;
+  color: #fff;
+  width: calc(100vw - 20px);
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+ .botinput input {
+  display: inline-block;
+  height: 50px;
+  line-height: 40px;
+}
+
+.circle {
+  width: 100%;
+  height: 100px;
+  background-color: #eb4d45;
+  border-radius: 0 0 100px 100px;
+}
+
+.line {
+  border-bottom: 1px solid #eee;
+}

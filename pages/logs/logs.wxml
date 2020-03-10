@@ -1,0 +1,19 @@
+<!--logs.wxml-->
+ <view class='head'>
+    <text class='title'>完成任务</text>
+    <text class="day">{{count}}</text>
+    <text class="tap">总计 {{sum}} km</text>
+    <text class="tap">加油哦~</text>
+  </view>
+<view class="log-list tr" >
+<text class="item">日期</text>
+<text class="item">时长</text>
+<text  class="item">行程</text >
+</view>
+<scroll-view scroll-y >
+<view wx:for="{{logs}}" wx:for-item="log" class="log-list">
+    <text class="item">{{log.date}}</text>
+    <text class="item">{{log.time}}</text>
+    <text class="item">{{log.meters}}</text>
+</view>
+</scroll-view>  

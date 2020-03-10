@@ -1,0 +1,35 @@
+<!--pages/todo/todo.wxml-->
+<!-- 账单 -->
+<view class='con'>
+    <!-- 头部 -->
+    <view class='head'>
+        <picker mode="date" fields="month" value="{{date}}" start="1996-09-01" end="3050-09-01"
+                bindchange="bindDateChange">
+            <view class='head-item'>
+                <text>{{date.year}}年</text>
+                <text class='arrow'>{{date.month}}月</text>
+            </view>
+        </picker>
+        <view class='head-item'>
+            <text>待办</text>
+            <text>{{unfinish}}</text>
+        </view>
+        <view class='head-item'>
+            <text>已办</text>
+            <text>{{finished}}</text>
+        </view> 
+    </view>
+    <!-- 主体 -->
+    <scroll-view scroll-y class='scroll-view'>
+        <view class='main'>
+            <block wx:if="{{todo.length === 0}}">
+                <view>
+                    <text>本月没有记录哦</text>
+                </view>
+            </block>
+           <bill-list data="{{todo}}" bind:pass="handle" ></bill-list>
+        </view>
+    </scroll-view>
+    <!--  添加账单按钮-->
+    <navigator class="addBtn" open-type="navigateTo" url="../add/add">+</navigator>
+</view>

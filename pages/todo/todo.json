@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "bill-list": "/components/bill-list/bill-list"
+    },
+    "navigationBarTitleText": "备忘录"
+}
